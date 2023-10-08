@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Food</title>
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            /* font-family: sans-serif; */
+
+        }
+
+        .Section1 {
+            height: max-content;
+            width: 80%;
+            /* border: 1px solid red; */
+            top: 0;
+            margin: auto;
+        }
+
+        .Navbar {
+            height: 10vh;
+            width: 80%;
+            /* border: 1px solid black; */
+            margin: auto;
+            top: 0;
+            position: fixed;
+            /* left: 10%; */
+            background-color: white;
+        }
+
+        .threelines {
+            height: 7vh;
+            width: 40px;
+            /* border: 1px solid red; */
+            /* margin-top: 10px; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 10px;
+            position: absolute;
+        }
+
+        .threelines:hover {
+            background-color: silver;
+            padding: 10px 5px;
+        }
+
+        .lines {
+            height: 2.5px;
+            width: 20px;
+            background-color: black;
+            margin-top: 6px;
+            margin-left: 6px;
+        }
+
+        .logo {
+            display: inline;
+            vertical-align: top;
+            margin-left: 45%;
+            font-weight: normal;
+            position: absolute;
+            margin-top: 10px;
+        }
+
+        .mail {
+            display: inline;
+            vertical-align: top;
+            float: right;
+            font-weight: normal;
+            position: absolute;
+            right: 0;
+            margin-top: 10px;
+
+        }
+
+        .images {
+            height: max-content;
+            width: 100%;
+            /* border: 1px solid brown; */
+            padding: 1px;
+            margin-top: 10%;
+        }
+
+        .fourim {
+            height: 600px;
+            width: 24%;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            /* margin-top: 40px; */
+            margin: 0.2%;
+        }
+
+        .pic1 {
+            height: 430px;
+            width: 100%;
+            background-image: url(./images2/images01.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .text1 {
+            height: 160px;
+            width: 100%;
+            /* border: 1px solid red; */
+            text-align: center;
+        }
+
+        .def {
+            font-weight: normal;
+        }
+
+        .random {
+            font-size: 17px;
+            margin-top: 10px;
+            font-weight: normal;
+        }
+
+        .pic2 {
+            height: 430px;
+            width: 100%;
+            background-image: url(./images2/images02.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .pic3 {
+            height: 430px;
+            width: 100%;
+            background-image: url(./images2/images03.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .pic4 {
+            height: 430px;
+            width: 100%;
+            background-image: url(./images2/images04.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .pic5 {
+            height: 430px;
+            width: 100%;
+            background-image: url(./images2/images05.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .pic6 {
+            height: 430px;
+            width: 100%;
+            background-image: url(./images2/images06.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .pic7 {
+            height: 430px;
+            width: 100%;
+            background-image: url(./images2/images01.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .pic8 {
+            height: 430px;
+            width: 100%;
+            background-image: url(./images2/images07.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .digits {
+            height: 8vh;
+            width: 100%;
+            /* border: 1px solid blueviolet; */
+            text-align: center;
+        }
+
+        /* .blackdiv{
+            height: 25px;
+            width: 25px;
+            border: 1px solid;
+            background-color: black;
+            position: relative;
+            margin-left: 35%;
+            margin-top: 2%;
+        } */
+        .one {
+            color: white;
+            padding: 10px 12px;
+            background-color: black;
+            width: max-content;
+            display: inline-block;
+        }
+
+        .two {
+            display: inline;
+            padding: 10px 12px;
+        }
+
+        .two:hover {
+            background-color: black;
+            padding: 10px 12px;
+            color: white;
+        }
+
+        .bdrbottom {
+            width: 100%;
+            border-bottom: 1px solid rgb(238, 238, 238);
+        }
+        .Section2 {
+            height: max-content;
+            width: 80%;
+            margin: auto;
+            /* border: 1px solid red; */
+            text-align: center;
+        }
+
+        .foodman {
+            margin-top: 5%;
+            font-weight: normal;
+        }
+
+        .mypic {
+            height: 60vh;
+            width: 60%;
+            /* border: 1px solid red; */
+            /* margin-left: 20%;
+            margin-top: 5%; */
+            background-image: url(./images2/images08.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+            margin-top: 5%;
+        }
+
+        .italic {
+            margin-top: 10px;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        .para2 {
+            font-size: 17.5px;
+            margin-top: 40px;
+            font-weight: normal;
+        }
+
+        .bdrbottom2 {
+            width: 100%;
+            border-bottom: 1px solid rgb(238, 238, 238);
+            margin-top: 8%;
+        }
+
+        .Section3 {
+            height: 40vh;
+            width: 80%;
+            /* border: 1px solid red; */
+            margin: auto;
+        }
+
+        .footer {
+            height: 40vh;
+            width: 32%;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            /* margin-left: 10px; */
+        }
+
+        .footer2 {
+            height: 40vh;
+            width: 30%;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            /* margin-left: 10px; */
+        }
+
+        .footer3 {
+            height: 40vh;
+            width: 34%;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 1%;
+        }
+
+        .ftr {
+            font-weight: normal;
+            margin-top: 60px;
+        }
+
+        .pgf {
+            font-weight: normal;
+            font-size: 17px;
+            margin-top: 20px;
+        }
+
+        .decor {
+            cursor: pointer;
+        }
+
+        .lorem {
+            height: 11vh;
+            width: 100%;
+            /* border: 1px solid red; */
+            /* margin-top: 10px; */
+        }
+
+        .lorem:hover {
+            background-color: silver;
+        }
+
+        .picl {
+            height: 50px;
+            width: 50px;
+            /* border: 1px solid red; */
+            margin-left: 20px;
+            background-image: url(./images2/images09.jpg);
+            background-position: center;
+            background-size: cover;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 10px;
+        }
+
+        .textr {
+            height: max-content;
+            width: 40%;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        .bdrbottom3 {
+            width: 100%;
+            border-top: 1px solid rgb(238, 238, 238);
+            /* margin-top: 8%; */
+        }
+
+        .HL {
+            font-weight: normal;
+            margin-top: 5px;
+        }
+
+        .aero {
+            background-image: url(./images2/images10.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .forteentags{
+            height: max-content;
+            width: 350px;
+            /* border: 1px solid rebeccapurple; */
+            margin-top: 25px;
+            line-height: 1.5;
+        }
+      
+        .tags{
+            height: 20px;
+            width: 40px;
+            border: 1px solid;
+            background-color: black;
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 14px;
+            margin-bottom: 16px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        .tags1{
+            height: 17px;
+            border: 1px solid;
+            background-color: rgb(97,97,97);
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+            /* margin-top: 5px; */
+            font-size: smaller;
+            font-size: 13px;
+            margin-bottom: 16px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+     
+        @media screen and (max-width:821px) {
+            .fourim {
+                height: 700px;
+            }
+            .mypic{
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:541px) {
+            .fourim {
+                width: 99%;
+                height: max-content;
+            }
+            .footer{
+                width: 99%;
+            }
+            .footer2{
+                width: 99%;
+            }
+            .footer3{
+                width: 99%;
+            }
+        }
+
+        @media screen and (max-width:415px) {
+            .fourim {
+                width: 99%;
+            }
+            .footer{
+                width: 99%;
+            }
+            .footer2{
+                width: 99%;
+            }
+            .footer3{
+                width: 99%;
+            }
+        }
+
+        @media screen and (max-width:376px) {
+            .fourim {
+                width: 99%;
+            }
+            .footer{
+                width: 99%;
+            }
+            .footer2{
+                width: 99%;
+            }
+            .footer3{
+                width: 90%;
+            }
+            
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="Section1">
+        <div class="Navbar">
+            <div class="threelines">
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+            </div>
+            <h2 class="logo">My Food</h2>
+            <h2 class="mail">Mail</h2>
+        </div>
+        <div class="images">
+            <div class="fourim">
+                <div class="pic1"></div>
+                <div class="text1">
+                    <h2 class="def">The Perfect Sandwich, A Real NYC Classic</h2>
+                    <h5 class="random">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</h5>
+                </div>
+            </div>
+            <div class="fourim">
+                <div class="pic2"></div>
+                <div class="text1">
+                    <h2 class="def">Let Me Tell You About This Steak</h2>
+                    <h5 class="random">Once again, some random text to lorem lorem lorem lorem ipsum text praesent
+                        tincidunt ipsum lipsum.</h5>
+                </div>
+            </div>
+            <div class="fourim">
+                <div class="pic3"></div>
+                <div class="text1">
+                    <h2 class="def">Cherries, interrupted</h2>
+                    <h5 class="random">Lorem ipsum text praesent tincidunt ipsum lipsum. <br>
+                        <br>
+                        What else?
+                    </h5>
+                </div>
+            </div>
+            <div class="fourim">
+                <div class="pic4"></div>
+                <div class="text1">
+                    <h2 class="def">Once Again, Robust Wine and Vegetable Pasta</h2>
+                    <h5 class="random">Lorem ipsum text praesent tincidunt ipsum lipsum.</h5>
+                </div>
+            </div>
+            <div class="fourim">
+                <div class="pic5"></div>
+                <div class="text1">
+                    <h2 class="def">All I Need Is a Popsicle</h2>
+                    <h5 class="random">Lorem ipsum text praesent tincidunt ipsum lipsum.</h5>
+                </div>
+            </div>
+            <div class="fourim">
+                <div class="pic6"></div>
+                <div class="text1">
+                    <h2 class="def">Salmon For Your Skin</h2>
+                    <h5 class="random">Once again, some random text to lorem lorem lorem lorem ipsum text praesent
+                        tincidunt ipsum lipsum.</h5>
+                </div>
+            </div>
+            <div class="fourim">
+                <div class="pic7"></div>
+                <div class="text1">
+                    <h2 class="def">The Perfect Sandwich, A Real Classic</h2>
+                    <h5 class="random">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.
+                    </h5>
+                </div>
+            </div>
+            <div class="fourim">
+                <div class="pic8"></div>
+                <div class="text1">
+                    <h2 class="def">Le French</h2>
+                    <h5 class="random">Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</h5>
+                </div>
+            </div>
+            <div class="digits">
+                <h4 class="one">1</h4>
+                <h4 class="two">2</h4>
+                <h4 class="two">3</h4>
+                <h4 class="two">4</h4>
+            </div>
+            <div class="bdrbottom"></div>
+        </div>
+    </div>
+    <div class="Section2">
+        <h2 class="foodman">About Me, The Food Man</h2>
+        <div class="mypic"></div>
+        <h2 class="foodman">I am Who I Am!</h2>
+        <h4 class="italic">With Passion For Real, Good Food</h4>
+        <p class="para2">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an
+            interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt
+            sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non
+            fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+            ultricies congue gravida diam non fringilla.</p>
+        <div class="bdrbottom2"></div>
+    </div>
+    <div class="Section3">
+        <div class="footer">
+            <h2 class="ftr">FOOTER</h2>
+            <p class="pgf">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+                ultricies congue gravida diam non fringilla.</p>
+            <p class="pgf">Powered by <span class="decor" style="text-decoration: underline;">w3.css</span></p>
+        </div>
+        <div class="footer2">
+            <h2 class="ftr">BLOG POSTS</h2>
+            <div class="lorem">
+                <div class="picl"></div>
+                <div class="textr">
+                    <h3 class="HL">Lorem</h3>
+                    <h4 class="HL">Sed mattis nunc</h4>
+                </div>
+            </div>
+            <div class="bdrbottom3"></div>
+            <div class="lorem">
+                <div class="picl aero"></div>
+                <div class="textr">
+                    <h3 class="HL">Ipsum</h3>
+                    <h4 class="HL">Praes tinci sed</h4>
+                </div>
+            </div>
+        </div>
+        <div class="footer3">
+            <h2 class="ftr">POPULAR TAGS</h2>
+            <div class="forteentags">
+                <div class="tags">Travel</div>
+                <div class="tags1 newyrk">NewYork</div>
+                <div class="tags1">Dinner</div>
+                <div class="tags1">Salmon</div>
+                <div class="tags1">France</div>
+                <div class="tags1">Drinks</div>
+                <div class="tags1">Ideas</div>
+                <div class="tags1">Flavours</div>
+                <div class="tags1">Cuisine</div>
+                <div class="tags1">Chicken</div>
+                <div class="tags1">Dressing</div>
+                <div class="tags1">Fried</div>
+                <div class="tags1">Fish</div>
+                <div class="tags1">Duck</div>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
